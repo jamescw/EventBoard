@@ -1,0 +1,23 @@
+{
+    "event": {
+        "type": "object",
+        "properties": {
+            "source": {
+                "type": "string"
+            },
+            "type": {
+                "type": "string",
+                "oneOf": [
+                    "info",
+                    "warning",
+                    "success",
+                    "danger"
+                ]
+            },
+            "message": {
+                "type": "string"
+            }
+        },
+        "required": ["source", "message"]
+    }
+}
